@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/API"
+    schedule:
+      interval: "daily"
+      time: "00:00"
+      timezone: "Etc/UTC"
+    versioning-strategy: increase
+    open-pull-requests-limit: 20
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "00:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 20
