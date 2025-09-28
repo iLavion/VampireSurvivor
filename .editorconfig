@@ -1,0 +1,21 @@
+root = true
+
+# rules for C# files
+[*.cs]
+charset = utf-8
+indent_style = space
+indent_size = 4
+end_of_line = lf
+insert_final_newline = true
+
+# place braces on new lines for types and methods only
+csharp_new_line_before_open_brace = types, methods
+
+# keep else/catch/finally on same line as preceding closing brace
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+
+# single embedded statements without braces
+csharp_prefer_braces = when_multiline:suggestion
+csharp_style_allow_embedded_statements_on_same_line = true:suggestion
